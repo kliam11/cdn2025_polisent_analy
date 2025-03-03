@@ -1,1 +1,1 @@
-# poli-sentiment-shifter
+# 2025 Canadian Federal Election Sentiment Analyzer
