@@ -1,1 +1,1 @@
-# CDN Federal Political Sentiment Analysis
+# poli-sentiment-shifter
