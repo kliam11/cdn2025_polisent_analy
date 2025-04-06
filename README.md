@@ -31,17 +31,17 @@ Comments are tokenized. A max of 512 tokens is required for BERT models. We pad 
 ### Analysis:
 
 We conduct various analyses: 
-Topic modelling with a BERTTopic of the top 4 topics per month over time ✅
-Mentions of candidates over time						  ✅
-Mentions of party over time						  	  ✅
-Total sentiment numbers within the last year
-Sentiment towards each party over time
-Topic analysis in correlation to mentioned candidates and underlying sentiment
+- Topic modelling with a BERTTopic of the top 4 topics per month over time      ✅
+- Mentions of candidates over time						                        ✅
+- Mentions of party over time						  	                        ✅
+- Total sentiment numbers within the last year
+- Sentiment towards each party over time
+- Topic analysis in correlation to mentioned candidates and underlying sentiment
 
 For topic-candidate sentiment correlation we do the following:
-We analyze the comment for a) its sentiment (1 being most positive and -1 being most negative) and its corresponding probability and b) who it is referring to via Named Entity Recognition. 
-We assign the comment its target, and a sentiment probability (leaning)
-We use the weighting of the sentiment and the adjusted score. 
-We then accumulate references and their score X sentiment to assign a popular opinion for the given party
-Where negative sentiment reduces the impact and positive increases it 
-We correlate over each candidate and topic
+- We analyze the comment for a) its sentiment (1 being most positive and -1 being most negative) and its corresponding probability and b) who it is referring to via Named Entity Recognition. 
+- We assign the comment its target, and a sentiment probability (leaning)
+- We use the weighting of the sentiment and the adjusted score. 
+- We then accumulate references and their score X sentiment to assign a popular opinion for the given party
+- Where negative sentiment reduces the impact and positive increases it 
+- We correlate over each candidate and topic
